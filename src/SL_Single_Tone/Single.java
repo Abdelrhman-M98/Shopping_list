@@ -1,8 +1,8 @@
 package SL_Single_Tone;
+
 import java.util.ArrayList;
 
-public class Single
-{
+public class Single {
     //Create a variable from type Single to return the value in it for one time
     private static Single instance = null;
 
@@ -28,11 +28,16 @@ public class Single
 
     public String removeItem(int index) {
         if (index >= 1 && index <= shoppingList.size()) {
-            return shoppingList.remove(index-1);
+            return shoppingList.remove(index - 1);
         } else {
             return null;
         }
     }
+
+    public boolean removeItem(String item) {
+        return shoppingList.remove(item);
+    }
+
 
     public void printList() {
         if (shoppingList.isEmpty()) {
@@ -40,7 +45,7 @@ public class Single
         } else {
             System.out.println("Here is your shopping list:");
             for (int i = 0; i < shoppingList.size(); i++) {
-                System.out.println((i+1) + ". " + shoppingList.get(i));
+                System.out.println((i + 1) + ". " + shoppingList.get(i));
             }
         }
     }
