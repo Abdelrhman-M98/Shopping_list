@@ -1,11 +1,11 @@
-import SL_Single_Tone.Single;
+import SL_Single_Ton.Shopping_list_single_Ton_class;
 
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        Single shoppingList = Single.getInstance();
+        Shopping_list_single_Ton_class shoppingList = Shopping_list_single_Ton_class.getInstance();
 
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Welcome to your shopping list !");

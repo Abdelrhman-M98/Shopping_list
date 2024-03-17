@@ -1,23 +1,23 @@
-package SL_Single_Tone;
+package SL_Single_Ton;
 
 import java.util.ArrayList;
 
-public class Single {
+public class Shopping_list_single_Ton_class {
     //Create a variable from type Single to return the value in it for one time
-    private static Single instance = null;
+    private static Shopping_list_single_Ton_class instance = null;
 
 
     private final ArrayList<String> shoppingList;
 
     //private constructor create a list
-    private Single() {
+    private Shopping_list_single_Ton_class() {
         shoppingList = new ArrayList<>();
     }
 
     // function return instance
-    public static Single getInstance() {
+    public static Shopping_list_single_Ton_class getInstance() {
         if (instance == null) {
-            instance = new Single();
+            instance = new Shopping_list_single_Ton_class();
         }
         return instance;
     }
