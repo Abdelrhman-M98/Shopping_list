@@ -1,5 +1,3 @@
-package SL_Single_Ton;
-
 import java.util.ArrayList;
 
 public class Shopping_list_single_Ton_class {
